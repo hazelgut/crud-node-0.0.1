@@ -1,0 +1,25 @@
+{
+  "name": "basic-webpage-0.0.2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently --kill-others \"node serverDB.js\" \"node server.js\" "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "concurrently": "^9.2.1",
+    "dotenv": "^17.4.2",
+    "eslint": "^10.4.0",
+    "globals": "^17.6.0",
+    "prettier": "^3.8.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  }
+}
