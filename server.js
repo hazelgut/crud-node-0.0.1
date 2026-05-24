@@ -16,6 +16,6 @@ server.get('/index.js', (req, res) => {
   res.sendFile(join(import.meta.dirname, 'index.js'))
 })
 server.use(unknownEnpoint)
-server.listen(PORT,() => {
+server.listen(PORT, () => {
   console.log('Server running on port ', PORT)
 })
