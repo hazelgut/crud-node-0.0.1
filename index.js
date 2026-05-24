@@ -2,9 +2,7 @@ const resultNode = document.querySelector('.result-container')
 async function handleFetchRequest(event) {
   event.preventDefault()
   try {
-    const data = await fetch('http://localhost:4589/notes').then((res) =>
-      res.json(),
-    )
+    const data = await fetch('/notes').then((res) => res.json())
     for (let item of data) {
       if (!item.content) {
         throw new Error('no content')
